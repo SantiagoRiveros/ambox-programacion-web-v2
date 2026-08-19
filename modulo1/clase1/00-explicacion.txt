@@ -1,0 +1,71 @@
+Temas/tecnologias que vamos a ver en el curso:
+
+Lenguajes de programacion:
+    Javascript
+    Typescript
+
+Tecnologias que vamos a ver:
+
+    Frontend (Cliente/Vistas):
+        HTML
+        CSS
+        Bootstrap
+        React
+        Vite
+    Backend (API/Servidor):
+        NodeJS
+        Express
+        Mongoose
+    Database (Base de datos):
+        MongoDB (Mongo Atlas)
+
+
+-COMO FUNCIONA INTERNET (En realidad las paginas):
+Toda pagina, tiene por lo menos una parte visible, algunas paginas, ademas, tienen una base de datos.
+
+Tenemos 3 partes/capas que tiene una pagina web completa.
+
+FRONTEND - BACKEND - DATABASE
+
+CLIENTE - SERVIDOR - BASE DE DATOS.
+
+-CLIENTE:
+Es el encargado, de mostrar la parte visual de la pagina, es decir la interfaz.
+Puede tener interacciones, como por ejemplo, formularios, secciones, CTA (Call to actions), etc.
+Esta es la parte que uno ve, cuando entra a una pagina, desde nuestro navegador.
+
+-SERVIDOR:
+Es el encargado, de llevar y traer informacion desde nuestro cliente, hacia nuestra base de datos.
+Muchas veces, en el camino, se dedica a validar, encriptar y asegurar la informacion que transporta.
+
+
+-BASE DE DATOS:
+Una base de datos, es un lugar, donde se almacena de manera organizada, y lista para su uso, informacion en forma de datos.
+En teoria deberia ser eficiente, y estar ordenada.
+Cuando uno se registra en una pagina, el usuario se guarda aca.
+Cuando uno sube un producto a un marketplace, se guarda aca.
+La informacion variable y dinamica que se muestra en una pagina, todo eso se guarda en una base de datos.
+
+
+Cliente -> Servidor -> Base de datos -> Servidor -> Cliente
+
+Como es esto?
+Ejemplo: 
+    Desde el cliente, subimos un producto
+    El servidor lo valida, y lo envia a la base de datos.
+    Una vez guardado, la base de datos le responde al servidor que salio todo OK (o no)
+    El servidor recibe la respuesta y la envia al cliente.
+    El cliente recibe la respuesta y reacciona acorde.
+
+
+Frontend (Cliente):
+
+    -HTML: HyperText Markup Language, o lenguaje de marcado de hipertexto, es la columna vertebral de nuestra interfaz.
+    Se dedica a darle estructura a la pagina, pero sin estetica. 
+
+    -CSS: Cascading Style Sheets, es el "maquillaje" de nuestra pagina, se encarga de los tamaños, los colores
+    y la estetica en general.
+
+    -Javascript: Es lo que le da dinamica a toda nuestra pagina, la funcionalidad y comportamiento en su totalidad
+    son obra de Javascript.
+

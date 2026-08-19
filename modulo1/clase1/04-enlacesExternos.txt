@@ -1,0 +1,11 @@
+Software a instalar:
+
+    1. NodeJS:
+        https://nodejs.org/es
+    2. Visual Studio Code:
+        https://code.visualstudio.com/
+Etiquetas HTML:
+
+    1. https://www.w3schools.com/Tags/default.asp
+    2. https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements
+    3. https://www.geeksforgeeks.org/html/html-tags-a-to-z-list/

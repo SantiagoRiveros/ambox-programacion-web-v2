@@ -1,0 +1,102 @@
+div -> Division, es la forma mas generalista de crear una Division
+header -> Es el encabaezado de la pagina, representa contenido introductorio 
+nav -> Es la seccion de navegacion de la pagina.
+main -> Es la seccion que contiene el contenido principal, generalmente existe uno unico
+footer -> Es el pie de pagina
+
+section -> Agrupa contenido relacionado
+article -> representa contenido independiente, se puede usar para noticias, publicaciones, posts
+            productos, comentarios, articulos de un blog. }
+aside -> contenido relacionado pero seucndario, como por ejemplo un sidebar, publicidad, contenido relacionado
+        enlaces adicionales, etc.
+
+
+ETIQUETAS DE TEXTO.
+
+<h1> ... <h6> -> Etiquetas de Headings, sirven como "titulos", el h6 es el mas chico
+<p> -> Parrafo
+<span> -> Contenedor en linea, que sirve para agrupar fragmentos de texto y aplicarles estilos diferentes
+<br> -> salto de linea
+<hr> -> Salto tematico (Casi no se usa)
+
+ENFASIS
+
+<strong>Importante</strong>
+
+<em>Énfasis</em>
+
+<mark>Marcado</mark>
+
+<small>Texto pequeño</small>
+
+<del>Texto eliminado</del>
+
+<ins>Texto agregado</ins>
+
+<sub>2</sub>
+
+<sup>2</sup>
+
+LINKS
+<a href="https://google.com">
+    Google
+</a>
+Etiqueta Anchor, cuando haces click en la etiqueta, te redirige a ese link
+
+IMAGENES
+<img> -> Etiqueta de imagen, src indica la fuente, href si es una fuente en una URL, y alt para
+indicar el contenido alternativo.
+
+MULTIMEDIA
+<audio controls>
+    <source src="audio.mp3">
+</audio>
+<video controls>
+    <source src="video.mp4">
+</video>
+<iframe
+    src="https://www.youtube.com/..."
+></iframe>
+
+LISTAS
+Lista desordenada:
+<ul>
+
+    <li>Pan</li>
+    <li>Leche</li>
+    <li>Huevos</li>
+
+</ul>
+
+FORMULARIOS:
+<form> -> Su objetivo es permitir que el usuario introduzca informacion
+<label> -> Es el "titulo" de cada input, muestra que informacion debe ingresar el usuario
+<input> -> Es una de las etiquetas mas importantes, existen MUCHOS tipos
+<select> -> lista desplegable
+<button> -> Boton
+
+INPUTS
+
+| `type`           | Para qué sirve         |
+| ---------------- | ---------------------- |
+| `text`           | Texto                  |
+| `password`       | Contraseñas            |
+| `email`          | Emails                 |
+| `number`         | Números                |
+| `tel`            | Teléfonos              |
+| `url`            | URLs                   |
+| `search`         | Búsquedas              |
+| `date`           | Fecha                  |
+| `time`           | Hora                   |
+| `datetime-local` | Fecha + hora           |
+| `month`          | Mes                    |
+| `week`           | Semana                 |
+| `color`          | Color                  |
+| `checkbox`       | Varias opciones        |
+| `radio`          | Una opción             |
+| `file`           | Archivos               |
+| `range`          | Rango/deslizador       |
+| `hidden`         | Dato oculto            |
+| `submit`         | Enviar formulario      |
+| `reset`          | Restablecer formulario |
+| `button`         | Botón genérico         |

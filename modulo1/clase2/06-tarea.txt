@@ -1,0 +1,11 @@
+Van a tener que crear un formulario, con:
+
+Inputs:
+-Nombre.
+-Edad
+-Email
+-Password
+-Nacionalidad (Campo desplegable con SELECT)
+-Acepto Terminos y condiciones (Checkbox)
+
+Cada uno con sus atributos, y sus labels "enlazados"

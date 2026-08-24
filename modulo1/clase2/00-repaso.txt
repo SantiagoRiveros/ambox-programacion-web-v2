@@ -1,0 +1,59 @@
+¿Que es HTML?
+HyperText Markup Language o lenguaje de marcado de hipertexto
+Su funcion es definir la estructura y el significado del contenido de una pagina
+
+Ejemplo:
+
+<h1>Mi página web</h1>
+
+<p>Bienvenidos a mi página.</p>
+
+<button>Comprar</button>
+
+Luego CSS se encarga de -> Como se ve
+y Javascript -> Que hace
+
+HTML -> estructura
+CSS -> Diseño
+Javascript -> Funcionalidad
+
+ANATOMIA DE UNA ETIQUETA:
+
+<p>Bienvenidos a mi página.</p>
+
+<p> -> Es la apertura
+
+Bienvenidos a mi página. -> contenido
+</p> -> Cierre
+
+ATRIBUTOS DE ETIQUETA
+
+<img src="images.jpg" alt="Foto Perrito" />
+
+src y alt son atributos de la etiqueta.
+src -> Es para indicarle el "source" o fuente de la imagen, en este caso le indico el nombre de la imagen
+que deberia estar en la misma carpeta
+
+alt -> es "alternative" o alternativo, es si hay algun problema cargando la imagen, va a mostrar
+el texto que tiene como atributo
+
+
+HTML SEMANTICO:
+Antes era muy ocmun hacer:
+<div>
+    <div>
+        <div>
+            Mi página
+        </div>
+    </div>
+</div>
+
+El problema es que <div> en si, no nos dice nada de que significa ese contenido.
+HTML semantico utiliza etiquetas cuyo nombre describe su funcion.
+Estas etiquetas ya estan hechas, solo hay que utilizarlas.
+
+Esto mejora:
+-Accesibilidad
+-SEO 
+-mantenimiento
+-lectura del codigo

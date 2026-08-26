@@ -1,0 +1,24 @@
+La página debe tener:
+Un encabezado con nombre y descripción.
+Una sección "Sobre mí".
+Una sección "Mis habilidades" con al menos 5 habilidades.
+Una sección "Contacto" con email, teléfono y un botón.
+
+CSS obligatorio:
+Selectores por etiqueta.
+Selectores por clase.
+Al menos un selector por ID.
+color y background-color.
+font-size y font-family.
+text-align.
+margin.
+padding.
+border.
+border-radius.
+width y height.
+
+Aquellas propiedades que no se vieron en la clase:
+
+https://www.w3schools.com/cssref/index.php
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties

@@ -1,0 +1,68 @@
+Tenemos HTML, ya podemos "hacer una pagina", no?
+Para que queremos CSS?
+
+HTML -> Define que elementos existen.
+Pero... que define COMO SE VEN LOS ELEMENTOS?
+CSS, permite definir como se visualizan los elementos
+
+Podemos definir cosas como, colores, bordes, tamaños, tipo de letra (arial, times new roman), peso de la letra (comun, negrita)
+color de fondo, etc, etc, etc.
+
+Como funciona CSS?
+
+la sintaxis basica es:
+
+selector {
+    propiedad: valor;
+}
+
+EJEMPLO:
+
+h1 {
+    color: red;
+}
+
+Que es un selector?
+Es como "enganchamos" un elemento, para indicarle a css, que a ese elemento vamos a aplicarle las reglas de CSS.
+
+propiedad -> Es la propiedad visual que vamos a afectar, hay MUCHISIMAS
+valor -> Es el valor que le vamos a dar, es contextual dependiendo la propiedad (por ejemplo, no es lo mismo la altura de un elemento que el color)
+
+---------------------------------------------
+
+Tipos de selectores:
+
+-Etiqueta: Cuando usamos selector de etiqueta, aplica
+las reglas CSS a TODOS los elementos con esa etiqueta.
+
+-ID: Aplica la regla CSS al elemento que tenga ese ID.
+El id al ser unico, esto deberia afectar a un solo elemento
+
+-Clase: Aplica a un conjunto de elementos que 
+contenga la propiedad de la clase a la cual seleccionamos
+
+---------------------------------------------
+
+Hay 3 formas de aplicar CSS:
+
+-Archivo externo -> Ej: 01-primerEjemplo.html 
+
+-Inline -> Ej: 02-inlineCSS.html
+
+-Etiqueta Style -> Ej: 03-conEtiquetaStyle.html
+
+---------------------------------------------
+
+Sintaxis de selectores:
+
+etiqueta {
+    propiedad: valor;
+}
+
+#id {
+    propiedad: valor;
+}
+
+.clase {
+    propiedad: valor;
+}

@@ -1,0 +1,28 @@
+.columna{
+    display: flex;
+    flex-direction: column;
+}
+
+.fila{
+    display: flex;
+    flex-direction: row;
+}
+
+.columna-reversa{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.fila-reversa{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* body{
+    display: flex;
+    flex-direction: row;
+} */
+
+.boton1{
+    background-color: orange;
+}

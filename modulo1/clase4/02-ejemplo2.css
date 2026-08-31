@@ -1,0 +1,52 @@
+div {
+    border: 1px solid red;
+}
+
+#divFlexstart{
+    background-color: lime;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+}
+
+.fila{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexStart{
+        justify-content: flex-start;
+}
+
+.center{
+        justify-content: center;
+}
+
+.flexEnd{
+    justify-content: flex-end;
+}
+
+.spaceBetween{
+    justify-content: space-between;
+}
+
+.spaceAround{
+    justify-content: space-around;
+}
+
+.spaceEvenly{
+    justify-content: space-evenly;
+}
+
+.columna-reversa{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.fila-reversa{
+    display: flex;
+    flex-direction: row-reverse;
+}
+

@@ -1,0 +1,36 @@
+Nosotros, en general, venimos trabajando, usando <br> para hacer saltos de linea
+esto, nos sucede, porque cuando nosotros creamos elementos, se situan uno al lado del otro
+
+Flexbox, existe justamente para facilitarnos la distribucion de dos maneras principales:
+-Columna
+-Fila
+
+¿Que es flexbox?
+Es un sistema de CSS para distribuir y alinear elementos dentro de un contenedor.
+
+La idea fundamental es:
+CONTENEDOR -> display: flex;
+
+ELEMENTOS ->  Se acomodan automaticamente
+
+CONTENEDOR E HIJOS:
+
+Tenemos:
+Contenedor -> Hijo
+           -> Hijo 
+           -> Hijo 
+El elemento padre es el Flex Container.
+Los elementos dentro, son hijos y Flex Items.
+
+Eje principal y eje secundario:
+Flexbox trabaja con dos ejes
+
+Por defecto:
+
+El eje principal es horizontal
+Y el eje secundario es vertical
+
+justify-content = principal
+align-items = secundario
+Esto depende de flex-direction, porque cuando cambiemos
+la direccion, los ejes cambian

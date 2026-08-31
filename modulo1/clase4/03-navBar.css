@@ -2,17 +2,23 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border: 1px solid blue;
+    h2{
+        border: 1px solid red;
+    }
 }
 
 ul{
+    border: 1px solid red;
     display: flex;
     flex-direction: row;
-    align-items: center;
     width: 160px;
     justify-content: space-between;
+    align-items: center;
     padding: 0
 }
+
 li{
-    
     list-style: none;
+    border: 1px solid green;
 }

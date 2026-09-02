@@ -1,0 +1,260 @@
+Objetivos:
+-Entender que significa Responsive Design
+-Aplicar el enfoque Mobile First
+-Utilizar @media
+-crear Breakpoints
+-Diferenciar unidades absolutas de relativas
+-Usar px, %, rem, em, vw, vh,
+-Hacer que un layout flexbox cambie segun el tamaño de la pantalla
+-Adaptar una navbar y cards para distintos dispositivos
+
+----------------------------------------------------------
+
+Que es responsive design? (O diseño responsivo)
+¿Que pasa si hago una pagina pensando solamente en una pantalla de 1920x1080? (pixeles)
+
+En el celular, se va a ver mal, ¿porque? -> Porque hice las medidas pensando en un "medio" y no en todas las posibilidades
+
+Una pagina web, puede abrirse desde:
+-celular 
+-tablet
+-notebook
+-monitor
+-TV
+-etc
+Todos tienen medidas diferentes
+
+Responsive design:
+es el enfoque mediante el cual hacemos que una pagina web se adapte al tamaño de pantalla disponible.
+
+Ejemplo:
+Desktop (PC o notebook):
+┌───────────────────────────────────────────┐
+│ LOGO       INICIO  SOBRE MÍ      CONTACTO │
+├───────────────────────────────────────────┤
+│                                           │
+│       ┌──────┐ ┌──────┐ ┌──────┐          │
+│       │ Card │ │ Card │ │ Card │          │
+│       └──────┘ └──────┘ └──────┘          │
+│                                           │
+└───────────────────────────────────────────┘
+
+Mobile: (Telefonos)
+┌─────────────────┐
+│ LOGO        ☰  │
+├─────────────────┤
+│                 │
+│    ┌─────────┐  │
+│    │  Card   │  │
+│    └─────────┘  │
+│                 │
+│    ┌─────────┐  │
+│    │  Card   │  │
+│    └─────────┘  │
+│                 │
+└─────────────────┘
+La pagina, y el contenido es el mismo.
+
+Lo que cambia es el layout, y como se distribuye.
+
+Layout -> Es un esquema o plano que muestra la distribucion de los elementos dentro de un espacio fisico/digital
+
+------------------------------------------
+
+¿Porque no hacemos una pagina diferente para celular?
+Esto es RE importante.
+
+No queremos:
+desktop.html 
+mobile.html 
+tablet.html 
+
+Queremos:
+index.html
+style.css
+
+Que CSS determine como se presenta el contenido.
+
+¿No es mas util, poder decir a CSS?
+
+"Che, señor CSS, ayudame y cuando alguien lo abra de un celular, hace que en vez de filas, sean columnas?
+
+------------------------------------------------------------
+
+Mobile First (y... Desktop First <- Esta olvidadisimo, y no se usa)
+
+Diseñamos primero para pantallas pequeñas y despues agregamos modificaciones para pantallas mas grandes.
+
+en vez de tal vez, pensar las cosas en filas, empezamos con columnas
+
+Porque mobile first?
+
+Los dipositivos pequeños tienen menos espacios
+Por lo tanto si primero resolvemos:
+"Como muestro correctamente esto en 360 pixeles?"
+Despues podemos decir:
+"Perfecto, tengo mucha mas espacio en 1200 pixeles, que mas puedo agregar?"
+
+------------------------------------------------
+
+UNIDADES CSS 
+
+-pixeles (px)
+Es una unidad fija y absoluta, siempre 1 px es 1 px.
+ejemplo -> width : 300px;
+El elemento tendra aproxidamente ese ancho independientemente del tamaño de pantalla.
+No significa que px sea malo.
+Se usa MUCHISIMO.
+
+Por ejemplo:
+border 1px solid black;
+
+-porcentaje (%)
+Es relativo al elemento contenedor (padre)
+
+Por ejemplo:
+.card{
+    width: 50%;
+}
+
+si el contenedor mide -> 100 px
+la card ocupara -> 50 px
+
+si el contenedor mide 700 px 
+la card ocupara 350px 
+
+CONTENEDOR
+┌──────────────────────────────┐
+│                              │
+│       CARD 50%               │
+│       ┌──────────────┐       │
+│       │              │       │
+│       └──────────────┘       │
+│                              │
+└──────────────────────────────┘
+
+
+-rem 
+rem esta relacionado con el tamaño de fuente raiz del documento
+
+Normalmente:
+html {
+    font-size: 16px;
+}
+
+Entonces
+1rem = 16px 
+2rem = 32px
+1.5rem = 24px;
+
+por ejemplo:
+h1{
+    font-size: 2rem;
+}
+
+¿porque usar rem?
+Porque permite manejar tamaños de manera mas consistente.
+POdemos tener:
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+-viewport width (vw)
+Es decir, ancho de la ventana
+
+width: 50vw 
+100vw significa aproxidamamente todo el ancho del viewport(la ventana)
+
+Por ejemplo:
+viewport = 1000px
+100vw = 1000px
+50vw = 500px
+
+-viewport height (vh)
+Es el alto de la ventana
+
+height: 100vh 
+Esto permite crear por ejemploi una seccion que ocupe toda la altura disponible 
+
+.hero {
+    min-height: 100vh;
+}
+
+Resumen de unidades:
+| Unidad | Relación                       |
+| ------ | ------------------------------ |
+| `px`   | Tamaño fijo                    |
+| `%`    | Relativo al contenedor         |
+| `rem`  | Relativo al tamaño raíz        |
+| `em`   | Relativo al tamaño de fuente   |
+| `vw`   | Relativo al ancho del viewport |
+| `vh`   | Relativo al alto del viewport  |
+
+
+---------------------------------------------------------
+
+MEDIA QUERIES
+Una media query permite decir:
+"Si la pantalla cumple determinada condicion, aplica esta regla"
+
+Sintaxis:
+
+CSS:
+@media (min-width: 768px){
+    
+}
+
+------------------------------------------------------------
+
+BREAKPOINTS 
+Un breakpoint es basicamente un punto en el cual decidimos:
+"A partir de este tamaño, quiero cambiar el diseño"
+
+Ejemplo:
+@media (min-width: 768px) {
+
+}
+
+0px
+│
+│ Mobile
+│
+768px
+│
+│ Tablet
+│
+1024px
+│
+│ Desktop
+│
+└──────────────────────>
+
+Por ejemplo:
+
+/* Mobile */
+.proyectos {
+    flex-direction: column;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .proyectos {
+        flex-direction: row;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .proyectos {
+        max-width: 1000px;
+        margin: auto;
+    }
+}

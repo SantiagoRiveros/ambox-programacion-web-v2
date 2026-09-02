@@ -1,0 +1,153 @@
+# Trabajo Práctico — Landing Page Responsive
+
+Crear una **Landing Page responsive** para un producto, servicio o emprendimiento inventado.
+
+Pueden elegir, por ejemplo:
+
+* Una cafetería
+* Un gimnasio
+* Una tienda de ropa
+* Un estudio de diseño
+* Una agencia de viajes
+* Una aplicación móvil
+* Un restaurante
+* Un videojuego
+* Un emprendimiento propio
+
+## La página debe contener
+
+### 1. Header
+
+Debe incluir:
+
+* Nombre o logo del proyecto.
+* Navbar con al menos 3 enlaces.
+
+### 2. Sección principal
+
+Debe tener:
+
+* Un título.
+* Una descripción.
+* Un botón de acción.
+* Una imagen o elemento visual.
+
+### 3. Sección de características
+
+Crear al menos **3 cards** explicando las características o beneficios del producto/servicio.
+
+### 4. Sección adicional
+
+Elegir una:
+
+* Sobre nosotros
+* Testimonios
+* Precios
+* Servicios
+* Preguntas frecuentes
+
+### 5. Footer
+
+Debe incluir información básica del proyecto y enlaces.
+
+---
+
+# Requisitos Responsive
+
+La página debe adaptarse a tres tamaños:
+
+### 📱 Mobile — menos de 768px
+
+* Navbar vertical.
+* Cards en una sola columna.
+* Contenido adaptado al ancho de pantalla.
+* Espaciados reducidos.
+
+### 💻 Tablet — desde 768px
+
+* Navbar horizontal.
+* Cards en 2 columnas.
+* Mayor espacio entre elementos.
+
+### 🖥️ Desktop — desde 1024px
+
+* Cards en 3 columnas.
+* Contenido centrado.
+* Ancho máximo para evitar que el contenido ocupe toda la pantalla.
+
+---
+
+# Requisitos CSS
+
+Utilizar obligatoriamente:
+
+* `display: flex`
+* `flex-direction`
+* `justify-content`
+* `align-items`
+* `gap`
+* `width`
+* `max-width`
+* `padding`
+* `margin`
+* `@media`
+* `min-width`
+
+Además, utilizar al menos **4 de estas unidades**:
+
+* `px`
+* `%`
+* `rem`
+* `em`
+* `vw`
+* `vh`
+
+---
+
+# Importante
+
+El diseño debe hacerse utilizando **Mobile First**.
+
+Es decir, primero deben construir la versión para celular:
+
+```css
+/* Mobile */
+```
+
+Y después modificarla mediante Media Queries:
+
+```css
+@media (min-width: 768px) {
+    /* Tablet */
+}
+
+@media (min-width: 1024px) {
+    /* Desktop */
+}
+```
+
+No se permite crear un HTML diferente para cada dispositivo.
+
+Debe existir **un solo HTML** que se adapte mediante CSS.
+
+---
+
+# Entrega
+
+La carpeta debe contener:
+
+```text
+landing-page/
+│
+├── index.html
+├── style.css
+└── img/
+```
+
+La página debe poder abrirse directamente desde `index.html`.
+
+## Objetivo
+
+El objetivo no es solamente que la página "se vea linda".
+
+Se debe demostrar que entendieron cómo **adaptar una interfaz a diferentes tamaños de pantalla utilizando CSS y Media Queries**.

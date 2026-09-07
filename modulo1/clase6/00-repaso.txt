@@ -1,0 +1,21 @@
+¿Como saber si algo es Mobile First?
+
+Regla general:
+
+Reglas CSS sin media query -> Para mobile;
+
+Reglas CSS con media Query:
+Para tablet
+para escritorio
+
+En general se usa -> min-width
+
+porque?
+
+Hago reglas CSS, luego digo "CHE A PARTIR DE X TAMAÑO, ACOMODATE ASI"
+entonces, lo primero que yo arme, fue la estructura para el ancho minimo, osea movil.
+
+media query -> Peticion de medios.
+En CSS, pensemos que es algo que se condiciona, basandonse en los medios.
+Por ejemplo: Ancho/Alto de la pantalla/ventana
+Orientacion (Retrato/Paisaje)

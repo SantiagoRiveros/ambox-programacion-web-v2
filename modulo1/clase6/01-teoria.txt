@@ -1,0 +1,15 @@
+¿Que pasa cuando pasamos el mouse sobre un boton y el boton cambia de color?
+
+Que hace transistion?
+transition le dice al navegador:
+"Cuando cambie esta propiedad, no lo hagas de golpe. Hace el cambio
+progresivamente"
+
+transform permite modificar visuamente un elemento
+
+sus principales funciones son:
+
+translate() -> Mueve un elemento
+scale() -> Varia el tamaño de un elemento
+rotate() -> Gira un elemento
+skew() -> Te estira un elemento

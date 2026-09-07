@@ -1,0 +1,29 @@
+button{
+    background-color: blue;
+    color: red;
+    transition: 2s
+}
+
+button:hover{
+    background-color: red;
+    color: white;
+    border-color: red;
+    box-shadow: 15px 15px blue;
+    cursor: pointer;
+}
+
+#translate:hover{
+    transform: translate(20px, 10px);
+}
+
+#scale:hover{
+    transform: scale(1.05);
+}
+
+#rotate:hover{
+    transform: rotate(45deg);
+}
+
+#skew:hover{
+    transform: skew(30deg, 15deg);
+}

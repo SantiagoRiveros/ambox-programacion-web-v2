@@ -1,0 +1,118 @@
+¿Que es bootstrap?
+
+¿Cuantas veces escribimos CSS para hacer un bopton, un formulario o un sistema responsive?
+
+Bootstrap basicamente nos da CSS y Javascript ya preparados para construir interfaces
+
+Ejemplo sin bootstrap:
+
+<button class="boton">Comprar</button>
+
+.boton {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+Ejemplo con bootstrap:
+<button class="btn btn-primary">
+    Comprar
+</button>
+
+Bootstrap n reemplaza HTML ni CSS
+Nos ayuda a escribir menos CSS y a construir interfaces mas rapidamente
+
+Para agregar bootstra, en el head:
+
+<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+>
+
+y esto antes que termine el body:
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+el container de bootstrap limita el ancho del contenido y permite trabajar comodamente con la grilla
+
+Pensemos que el row, se divide en 12 partes, si yo tengo 12 columnas, se acomodan basicamente
+
+col-12
+En pantallas pequeñas ocupa 12
+
+col-md-6 (md = medium device)
+desde md ocupa 6
+
+col-lg-4 (lg = large device)
+Desde lg ocupa 4
+
+| Clase      | Idea             |
+| ---------- | ---------------- |
+| `col-12`   | móvil            |
+| `col-sm-*` | pantalla pequeña |
+| `col-md-*` | tablet           |
+| `col-lg-*` | desktop          |
+| `col-xl-*` | desktop grande   |
+
+--------------------------------------------------
+
+SASS
+CSS funciona perfectamente, pero cuando el proyecto crece, podemos querer variables
+archivos orgnizados y una sintaxis mas comoda
+
+Sass agrega características que luego se convierten a CSS.
+
+CSS tradicional:
+
+:root {
+    --color-principal: #6c5ce7;
+}
+
+button {
+    background-color: var(--color-principal);
+}
+
+En SASS:
+
+$color-principal: #6c5ce7;
+
+button {
+    background-color: $color-principal;
+}
+
+NESTING (Anidamiento):
+
+.card {
+    background-color: white;
+}
+
+.card h2 {
+    color: blue;
+}
+
+.card p {
+    color: gray;
+}
+
+SASS:
+
+.card {
+    background-color: white;
+
+    h2 {
+        color: blue;
+    }
+
+    p {
+        color: gray;
+    }
+}
+
+El Nesting permite escribir CSS de forma mas jerarquica
+
+"Hoy vamos a entender Sass, pero no necesitamos configurar un compilador para hacer la actividad. 
+Lo importante es entender qué problema resuelve."

@@ -1,0 +1,212 @@
+TP — Prototipo de E-commerce
+
+Tecnologías: HTML + CSS + Bootstrap
+Modalidad: Individual o parejas
+Objetivo: Crear la interfaz de un e-commerce que posteriormente será transformado en una aplicación Full Stack.
+
+Consigna
+
+Deberán desarrollar el prototipo visual de una tienda online utilizando HTML, CSS y Bootstrap.
+
+El proyecto debe simular un e-commerce real, pero por ahora no tendrá JavaScript, backend ni base de datos.
+
+1. Elegir una tienda
+
+Cada grupo deberá elegir qué tipo de productos va a vender.
+
+Algunos ejemplos:
+
+-Ropa
+-Zapatillas
+-Tecnología
+-Videojuegos
+-Libros
+-Instrumentos musicales
+-Productos deportivos
+-Accesorios
+-Decoración
+-Cosmética
+
+Importante: no pueden simplemente copiar una tienda existente.
+
+Deberán crear su propia identidad visual.
+
+2. Páginas obligatorias
+
+El proyecto debe tener al menos 4 páginas HTML.
+
+🏠 Inicio
+
+Debe incluir:
+
+Navbar
+Logo/nombre de la tienda
+Sección principal/banner
+Productos destacados
+Botones para acceder a productos
+Footer
+
+┌──────────────────────────────────────────┐
+│ LOGO   Inicio  Productos  Nosotros       │
+├──────────────────────────────────────────┤
+│                                          │
+│       LOS MEJORES PRODUCTOS              │
+│       PARA TU ESTILO                     │
+│                                          │
+│       [Ver productos]                    │
+│                                          │
+├──────────────────────────────────────────┤
+│          PRODUCTOS DESTACADOS            │
+│                                          │
+│  ┌──────┐  ┌──────┐  ┌──────┐            │
+│  │ img  │  │ img  │  │ img  │            │
+│  │ prod │  │ prod │  │ prod │            │
+│  │ $    │  │ $    │  │ $    │            │
+│  └──────┘  └──────┘  └──────┘            │
+├──────────────────────────────────────────┤
+│ Footer                                   │
+└──────────────────────────────────────────┘
+
+3. Página de productos
+
+Esta es la página más importante del TP porque después se va a transformar en la pantalla que React renderizará dinámicamente.
+
+Debe mostrar al menos 8 productos.
+
+Cada producto debe tener:
+
+Imagen
+Nombre
+Descripción corta
+Precio
+Categoría
+Botón "Ver producto" o "Agregar al carrito"
+
+Utilizar Bootstrap:
+
+<div class="card">
+
+y una grilla responsive.
+
+Por ejemplo:
+
+<div class="col-12 col-md-6 col-lg-3">
+
+La idea es que tengan:
+
+MOBILE
+
+┌──────────────┐
+│   Producto   │
+└──────────────┘
+
+┌──────────────┐
+│   Producto   │
+└──────────────┘
+
+
+TABLET
+
+┌───────┐ ┌───────┐
+│ Prod. │ │ Prod. │
+└───────┘ └───────┘
+
+
+DESKTOP
+
+┌────┐ ┌────┐ ┌────┐ ┌────┐
+│ P1 │ │ P2 │ │ P3 │ │ P4 │
+└────┘ └────┘ └────┘ └────┘
+
+4. Página de detalle
+
+Al hacer clic en "Ver producto", deberán llegar a una página de detalle.
+
+Por ejemplo:
+
+┌─────────────────────────────────────────┐
+│                                         │
+│       ┌─────────────┐                   │
+│       │             │   Zapatilla X     │
+│       │    IMAGEN   │                   │
+│       │             │   $120.000       │
+│       └─────────────┘                   │
+│                                         │
+│                         Descripción...   │
+│                                         │
+│                         Talle:           │
+│                         [ 40 ] [ 41 ]    │
+│                         [ 42 ] [ 43 ]    │
+│                                         │
+│                         [Agregar]        │
+│                                         │
+└─────────────────────────────────────────┘
+
+Todavía no tiene que funcionar el carrito.
+
+El botón simplemente puede ser visual.
+
+Esto es intencional.
+
+Más adelante:
+
+<button>
+      ↓
+JavaScript
+      ↓
+Carrito
+
+5. Página de contacto
+
+Crear una página con un formulario.
+
+Debe contener:
+
+Nombre
+Email
+Teléfono
+Asunto
+Mensaje
+
+[Enviar]
+
+Utilizar componentes de Bootstrap:
+
+form-control
+form-label
+btn
+btn-primary
+
+No hace falta que el formulario funcione.
+
+6. Navbar
+
+Todas las páginas deben compartir el mismo Navbar.
+
+Debe contener como mínimo:
+
+LOGO
+
+Inicio
+Productos
+Nosotros/Contacto
+
+Y agregar visualmente:
+
+🛒 Carrito
+
+Pero el carrito todavía no funciona.
+
+Esto les sirve para que después entiendan qué partes de la interfaz van a terminar teniendo comportamiento con React.
+
+ORDEN DE TRABAJO:
+
+Si es en equipo:
+
+Dividir las pantallas, y que por ejemplo, cada uno haga una.
+
+PRIMERO -> HTML Puro, sin CSS
+
+SEGUNDO -> CSS (Bootstrap)
+
+TERCERO -> Responsive

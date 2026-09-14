@@ -1,0 +1,23 @@
+Nombre:
+Pixel Store
+
+¿Qué vende?
+Accesorios y periféricos para PC.
+
+Clientes:
+Personas interesadas en gaming y tecnología.
+
+Estilo:
+Moderno y minimalista.
+
+Colores:
+Negro, blanco y violeta.
+
+Productos:
+Mouse
+Teclados
+Auriculares
+Mousepads
+Webcams
+Micrófonos
+etc.

@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- CSS Propio -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <title>Pixel Store</title>
+  </head>
+  <body>
+    <!-- ###############  -->
+    <!-- Logo y nombre -->
+    <!-- ###############  -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-purple bg-purple">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <svg
+              width="180"
+              height="50"
+              viewBox="0 0 220 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!-- Joystick -->
+              <g>
+                <rect
+                  x="24"
+                  y="10"
+                  width="7"
+                  height="17"
+                  rx="3.5"
+                  fill="#ffff"
+                />
+
+                <circle cx="27.5" cy="9" r="7" fill="#ffff" />
+
+                <path
+                  d="M9 32
+                   C10 25 16 21 23 23
+                   L32 23
+                   C39 21 45 25 46 32
+                   L49 44
+                   C50 48 46 51 42 49
+                   L35 44
+                   H20
+                   L13 49
+                   C9 51 5 48 6 44
+                   L9 32Z"
+                  fill="#ffff"
+                />
+
+                <rect
+                  x="14"
+                  y="31"
+                  width="13"
+                  height="5"
+                  rx="1"
+                  fill="#6C5CE7"
+                />
+
+                <rect
+                  x="18"
+                  y="27"
+                  width="5"
+                  height="13"
+                  rx="1"
+                  fill="#6C5CE7"
+                />
+
+                <circle cx="36" cy="31" r="3" fill="#6C5CE7" />
+
+                <circle cx="42" cy="36" r="3" fill="#6C5CE7" />
+              </g>
+
+              <!-- Texto -->
+              <text
+                x="60"
+                y="39"
+                font-family="Arial, Helvetica, sans-serif"
+                font-size="27"
+                font-weight="700"
+                fill="#222222"
+              >
+                Pixel
+              </text>
+
+              <text
+                x="131"
+                y="39"
+                font-family="Arial, Helvetica, sans-serif"
+                font-size="27"
+                font-weight="700"
+                fill="#ffff"
+              >
+                Store
+              </text>
+            </svg>
+          </a>
+          <div>
+            <a class="nav-link d-inline-block" href="index.html"> Inicio </a>
+            <a class="nav-link d-inline-block" href="productos.html">
+              Productos
+            </a>
+            <a class="nav-link d-inline-block" href="contacto.html">
+              Contacto
+            </a>
+            <a class="nav-link d-inline-block" href="#"> Carrito </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ###############  -->
+      <!-- Hero Section -->
+      <!-- ###############  -->
+      <section class="hero">
+        <div class="container">
+          <h1>Los mejores productos</h1>
+          <p>Encontrá todo lo que necesitás en un solo lugar.</p>
+          <a href="productos.html" class="btn btn-purple"> Ver productos </a>
+        </div>
+      </section>
+      <!-- ###############  -->
+      <!-- Productos destacados -->
+      <!-- ###############  -->
+      <section class="container my-5">
+        <h2 class="mb-4">Productos destacados</h2>
+
+        <div class="row g-4">
+          <!-- PRODUCTO 1 -->
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="img/producto1.jpg"
+                class="card-img-top"
+                alt="Nombre del producto"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Producto 1</h3>
+                <p class="card-text">Descripción breve del producto.</p>
+                <p>$50.000</p>
+                <a href="detalle.html" class="btn btn-purple"> Ver producto </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCTO 2 -->
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="img/producto2.jpg"
+                class="card-img-top"
+                alt="Nombre del producto"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Producto 2</h3>
+                <p class="card-text">Descripción breve del producto.</p>
+                <p>$70.000</p>
+                <a href="detalle.html" class="btn btn-purple"> Ver producto </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCTO 3 -->
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="img/producto3.jpg"
+                class="card-img-top"
+                alt="Nombre del producto"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Producto 3</h3>
+                <p class="card-text">Descripción breve del producto.</p>
+                <p>$90.000</p>
+                <a href="detalle.html" class="btn btn-purple"> Ver producto </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ###############  -->
+    <!-- Footer -->
+    <!-- ###############  -->
+    <footer class="bg-purple text-white">
+      <div class="container py-4">
+        <p class="text-center mb-0">Pixel Store © 2026</p>
+      </div>
+    </footer>
+  </body>
+</html>

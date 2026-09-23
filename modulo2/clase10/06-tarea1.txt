@@ -1,0 +1,44 @@
+Consignas
+
+Utilizando variables y operadores matemáticos, calculá y mostrale por consola al usuario:
+
+El subtotal del producto 1. (Es decir cantidad por precio)
+El subtotal del producto 2.
+El subtotal del producto 3.
+El subtotal de toda la compra. (todos los subtotales juntos)
+El precio final después de aplicar el descuento. (el subtotal menos el precio final)
+El precio final sumando el costo de envío. (el precio final sumandole el costo envio)
+
+Tenés que utilizar:
+
++
+-
+*
+
+Y al menos una vez:
+
+/
+%
+
+Ejemplo de salida
+Subtotal producto 1: ...
+Subtotal producto 2: ...
+Subtotal producto 3: ...
+Subtotal compra: ...
+Total con descuento: ...
+Total final con envío: ...
+
+
+--- Extra ---
+
+Agregá una variable:
+
+const cantidadCuotas = 3;
+
+Y calculá cuánto tendría que pagar el cliente por cuota.
+
+Mostrá:
+
+Total final: ...
+Cantidad de cuotas: ... 
+Valor de cada cuota: ...

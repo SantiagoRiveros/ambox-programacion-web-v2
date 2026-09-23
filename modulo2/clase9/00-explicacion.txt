@@ -1,0 +1,156 @@
+Si estoy haciendo una pagina web y hoy funciona, mañana rompo algo, y pasado mañana quiero volver a como estaba ayer.
+Como lo harian?
+
+Ideas:
+-Copiar la carpeta
+-Proyecto-final
+-proyecto-final-2
+-proyecto-final-ahora-Si
+
+GIT sirve para llevar un historial de cambios de un proyecto
+
+Que es git?
+
+Es un sistema de control de versiones.
+
+Permite registrar los cambios que hacemos en nuestros archivos a lo largo del tiempo.
+
+Por ejemplo:
+
+mi-proyecto/
+│
+├── index.html
+├── styles.css
+└── script.js
+
+Tenemos una primera version:
+
+Version 1
+
+Modificamos el HTML:
+
+Version 2
+
+Agregamos Javascript:
+
+Version 3
+
+Y despues rompemos todo:
+
+Version 4
+
+Con Git podemos volver a recuperar cualquiera de las versiones anteriores
+
+Git, funciona localmente
+
+No necesitamos github para usar git
+Podemos tener:
+
+PC
+│
+└── Proyecto
+    │
+    └── Git
+
+
+¿Que es Github?
+
+Entonces... git es una pagina web? No
+Git es distinto a github.
+
+Git es la herramienta de control de versiones.
+
+GFithub es la plataforma que permite alojar repositorios Git y trabajar con ellos de forma colaborativa
+
+
+Git -> Controla las versiones
+
+Github -> Una plataforma donde podemos alojar y compartir esos repositorios
+
+
+CONCEPTOS FUNDAMENTALES:
+
+Repositorio:
+Es el proyecto administrado por Git:
+
+mi-proyecto/
+│
+├── index.html
+├── styles.css
+├── script.js
+└── .git/
+
+la carpeta .git contiene la informacion que git utiliza para controlar las versiones
+
+
+Commit:
+Un commit es un registro de cambios
+Podemos pensarlo como:
+
+"Quiero guardar el estado actual del proyecto en el historial"
+
+Por ejemplo:
+
+Commit 1
+"Creo estructura HTML"
+
+Commit 2
+"Agrego estilos"
+
+Commit 3
+"Agrego formulario"
+
+Un buen commit de3beria describir que cambios
+
+(Los commits, tienen comentarios que son textos adjuntos como si fuera un "Nombre" o "descripcion" del commit)
+
+Malos comentarios de commit:
+cambios
+cosas
+final
+asd
+
+Buenos comentarios:
+Agrego formulario de contacto.
+
+COMO SUBIR MI REPOSITORIO DE GITHUB?
+
+primero, EN LA CARPETA RAIZ -> git init
+
+MUY IMPORTANTE QUE ESTE EN LA CARPETA RAIZ, SEAN PROLIJOS
+
+1- git init
+Esto sirve para inicializar nuestro repositorio
+
+2- git remote add origin URL_DEL_REPOSITORIO
+esto sirve para conectar nuestro repositorio local, al remoto
+
+3- git branch -M main
+Nombramos nuestra rama raiz como main, esto suele hacerse asi SIEMPRE
+
+4- git add .
+Agrega los cambios, para subirlos
+
+5- git commit -m "COMENTARIO DEL COMMIT"
+"Empaqueta" los cambios juntos con un comentario
+
+6- git push -u origin main
+Sube los cambios
+
+ESTOS PASOS los haces solo 1 vez, cuando haces tu primera subida.
+
+Luego, los cambios son:
+
+git add .
+
+git commit -m "comentario"
+
+git push
+
+¿Como traes cambios que estan en el remoto, pero no en el local?
+
+git pull
+
+¿Como cambio de rama?
+
+git checkout NOMBRE_DE_LA_RAMA

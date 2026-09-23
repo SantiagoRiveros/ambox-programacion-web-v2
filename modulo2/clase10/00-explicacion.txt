@@ -1,0 +1,235 @@
+Que es Javascript?
+
+Es un lenguaje de programacion, que se utiliza para dar interactividad, 
+dinamismo y comportamiento a las paginas web
+
+Junto con HTML (Que define la estructura) y CSS (Que define el diseño), Javascript es uno
+de los pilares fundamentales de la tecnologia en la web.
+
+¿Para que sirve?
+-Interactividad: Permite crear menus desplegables, galerias de imagenes en movimiento,
+ventanas emergentes y animaciones
+
+-Validacion de datos: Comprueba que los datos ingresados en un formulario sean correctos
+antes de enviarlos al servidor.
+
+-Actualizacion en tiempo real: Carga informacion nueva en la pagina sin necesidad
+de recargar el sitio web completo.
+
+-Desarrollo Completo: Con entornos como NodeJS, tambien se puede usar fuera del navegador
+para crear la logica de servidores (Backend) y aplicaciones completas.
+
+-Otros usos que tiene: Podemos crear aplicaciones de escritorio, videojuegos y moviles.
+Tambien hay algunos frameworks para desarrollo de IA. (Ej: Tensorflow)
+
+Javascript es interpretado, dinamico y debilmente tipado.
+
+-Interpretado: No necesita compilarse antes de ejecutarse, un motor dentro del navegador lee y
+ejecuta el codigo directamente
+
+-Basado en prototipos y orientado a objetos: Permite trabajar con objetos sin necesidad de
+clases tradicionales (Aunque hoy en dia soporta la sintaxis de clases)
+
+-Tipado Debil y dinamico: Las variables no necesitan declarar un tipo de dato fijo de
+antemano y puedne cambiar de tipo durante la ejecucion.
+
+-Asincrono y no bloqueante: Utiliza un modelo basado en eventos que permite realizar tareas pesadas
+(Como cargar datos o leer archivos) sin congelar la pagina ni detener al usuario.
+
+-Multiplataforma: Funciona en cualquier sistema operativo y navegador web moderno.
+
+-------------------------------------------
+
+Donde escribimos Javascript?
+
+Opcion A - Archivo .js anexado a un HTML
+
+<script src="script.js"></script>
+
+Carga y ejecuta el codigo javascript que esta en este archivo
+
+Opcion B - Archivo .js solo, y ejecutarlo a traves de la terminal.
+
+
+-------------------------------------------
+
+La consola:
+
+La consola es fundamental en el desarrollo, y mas en estos primeros pasos
+
+Nos permite mostrar informacion y comprobar que esta haciendo nuestra app.
+
+La instruccion principal:
+
+console.log()
+
+o por ejemplo:
+
+console.log("Hola");
+console.log("Estoy aprendiendo JavaScript");
+console.log(25);
+
+Resultado en consola:
+
+Hola
+Estoy aprendiendo Javascript 
+25
+
+Tambien podemos hacer operaciones:
+console.log(10 + 5);
+console.log(20 - 8);
+console.log(4 * 3);
+console.log(20 / 4);
+
+-----------------------------------------------------
+
+Variables:
+
+Una variable es un espacio donde podemos guardar informacion para usarla posteriormente.
+
+Como la declaramos?
+
+let nombre_de_la_variable = valor_de_la_variable
+
+let nombre = "Santiago";
+
+let -> declaramos una variable 
+nombre -> nombre de la variable 
+= -> asignamos un valor a la variable 
+"Santiago" -> valor
+
+-let:
+let se utiliza para declarar variables cuyo valor puede cambiar.
+
+Ejemplo:
+
+let edad = 25
+
+console.log(edad)
+
+podemos luego cambiar el valor, otro ejemplo:
+
+let edad = 25
+
+edad = 26
+
+console.log(edad)
+
+-const:
+const se utiliza cuando no queremos reasignar la variable.
+
+Ejemplo:
+
+const pais = "Argentina"
+
+console.log(pais)
+
+Lo que no podemos hacer:
+
+const pais = "Argentina"
+
+pais = "Brasil"
+
+Esto genera un error.
+
+----------------------------------
+
+Estrategias de nomenclatura de variables:
+
+Ejemplos "correctos":
+
+let nombre 
+let edad 
+let precioProducto 
+let nombreCompleto
+let cantidadProductos
+
+tambien:
+
+let nombre_completo
+
+pero, normalmente lo que se usa es camelCase.
+
+ejemplos "incorrectos":
+
+let a 
+let num3
+let xy 
+let 1nombre
+
+¿Cuando es incorrecto? Cuando el nombre no explica que va a contener la variable.
+
+IMPORTANTE -> la variable no admite espacios en su nombre, y en general
+es mejor evitar caracteres "raros" (como por ejemplo la Ñ, o usar acentos en los nombres)
+
+---------------------------------------------
+
+Una variable puede admitir diferentes tipos de informacion:
+
+-string:
+Los textos son strings.
+
+Como se declara un string? con comillas dobles, o simples
+
+let nombre = "Santiago";
+let ciudad = "Berazategui";
+
+let string = 'Hola" <- asi no, tiene que tener o todo comilla doble o todo comilla simple
+
+-number:
+los numeros (enteros, o decimales) son number:
+
+let edad = 25
+let precio = 1500
+let altura = 1.65
+
+-boolean:
+Un boolean solamente puede tener dos valores:
+
+true
+false 
+
+(pensarlo como verdadero / falso)
+
+-undefined:
+una variable puede existir pero no tener ningun valor asignado
+
+ejemplo:
+
+let sinDefinir 
+
+basicamente, la variable existe pero no tiene un valor.
+
+-null:
+
+null representa intencionalmente la ausencia de un valor 
+
+ejemplo:
+
+let usuario = null 
+
+osea, indicamos que su valro es nulo, que no tiene valor.
+
+--------------------------------------------------------
+
+Ejecutando desde terminal:
+
+Nosotros debemos ejecutar un archivo mediante la terminal,
+como lo hacemos?
+
+node nombreDelArchivo.js (reemplazando ese nombre con el nombre del archivo en si)
+
+Como navego entre carpetas?
+
+usando cd nombreCarpetaDestino
+
+tenemos que ir una carpeta a la vez
+
+para ir para "arriba" usamos -> cd ..
+
+-----------------------------------------------
+
+Comentarios
+
+Los comentarios son partes de nuestro codigo, que VSC (Visual Studio Code)
+ignora al interpretar Javascript

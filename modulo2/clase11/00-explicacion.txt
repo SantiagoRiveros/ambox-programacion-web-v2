@@ -1,0 +1,105 @@
+Operadores + Condicionales:
+
+¿Que es una variable?:
+Es un dato que usamos para almacenar un valor.
+
+¿Que diferencia hay entre "28" y 28?:
+"28" es un string, al estar envuelto en comillas, y 28 es un numero.
+
+¿Que pasa si hacemos edad + 5?:
+Si edad es un numero, se suma normalmente, sino se concatena.
+Ejemplo: edad = "edad" -> "edad" + 5 = "edad5"
+
+¿Que pasa si hacemos "28" + 5?
+da "285"
+
+------------------------------
+
+
+OPERADORES LOGICOS:
+
+
+una condicion que devuelve? true o false
+
+Si suponemos que condicion = true o false
+
+Vamos a explicar los operadores logicos:
+
+AND &&
+
+Significa:
+Se tiene que cumplir ambas condiciones:
+
+true && true -> true 
+true && false -> false
+false && true -> false
+false && false -> false
+
+Ejemplo:
+
+3 > 2 && 1 !== 2 -> Da true
+3 !== 3 && 2 > 1 -> Da false
+
+OR ||
+
+Devuelve verdadero si cualquiera de las dos condiciones es verdadera
+
+true || true -> true
+true || false -> true
+false || true -> true
+false || false -> false 
+
+Ejemplo:
+
+1 > 0 || 1 !== 1 -> true 
+1 > 2 || 2 > 3 -> false
+
+NOT !
+
+Invierte el estado de veracidad de algo
+
+!true -> false
+!false -> true
+
+
+Ejemplo:
+
+!(4 % 2 == 0) -> Para detectar impares
+
+------------------------------------------
+
+CONDICIONALES:
+
+El mas basico es if:
+
+if (condicion) {
+    // código
+}
+
+Si la condicion es verdadera, se ejecuta el codigo
+
+¿Que pasa si yo quiero ejecutar algo si esa condicion no se cumple?
+
+if + else:
+if (condicion) {
+    // código
+} else {
+    codigo
+}
+
+Si no se ejecuta el if, se ejecuta el else
+
+¿Que pasa cuando tenemos mas de dos posibilades?
+
+EjemplO:
+0 a 3 → Desaprobado
+4 a 5 → Recuperatorio
+6 a 10 → Aprobado
+
+Reglas:
+
+Si van encadenadas varias opciones:
+Puede haber maximo un if (Todos los else if que quieras)
+el if SIEMPRE al principio, no puede NUNCA empezar por else o else if 
+el else es la ultima opcion posible, es decir, no puede haber nada luego del else.
+

@@ -1,0 +1,64 @@
+Ejercicio 1 – Mayor de dos números
+
+Crear dos variables:
+
+let numero1 = 35;
+let numero2 = 42;
+
+Mostrar cuál de los dos números es mayor.
+
+Ejemplo:
+
+El número mayor es 42
+
+Si ambos son iguales, mostrar:
+
+Los números son iguales
+Ejercicio 2 – Menor de tres números
+
+Crear:
+
+let numero1 = 15;
+let numero2 = 8;
+let numero3 = 23;
+
+Determinar cuál es el menor de los tres números.
+
+Ejercicio 3 – Número dentro de un rango
+
+Crear:
+
+let numero = 45;
+
+Determinar si el número está entre 10 y 50, incluyendo ambos extremos.
+
+Mostrar:
+
+El número está dentro del rango
+
+o:
+
+El número está fuera del rango
+
+Ejercicio 5 – Calculadora simple
+
+Crear:
+
+let numero1 = 20;
+let numero2 = 5;
+let operacion = "*";
+
+Según el valor de operacion, realizar:
+
+"+" → suma
+"-" → resta
+"*" → multiplicación
+"/" → división
+
+Ejemplo:
+
+Resultado: 100
+
+Si la operación no es ninguna de las anteriores:
+
+Operación no válida

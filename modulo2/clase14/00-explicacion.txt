@@ -1,0 +1,24 @@
+¿Que es un array?
+
+let alumno1 = "Juan"
+let alumno2 = "Pedro"
+let alumno3 = "Pablo"
+let alumno4 = "Jose"
+let alumno5 = "Carlos"
+
+¿Que pasa si tengo 50 alumnos?
+
+Lo que nos soluciona y nos evita hacer 50 variables es:
+
+los arrays:
+
+let alumnos = ["Juan", "Pedro", "Lucia", "Martin", "Sofia"]
+// indices:      0        1        2        3          4
+
+un array permite almacenar varios valores dentro de una misma variable.
+Podemos dentro del array, guardar el tipo de dato que queramos, el array puede ser "mixto"
+es decir, tener varios tipos de datos en su interior.
+
+Los arrays, contienen elementos, estos elementos tienen una posicion definida dentro del array.
+Esta posicion, se define como INDICE.
+

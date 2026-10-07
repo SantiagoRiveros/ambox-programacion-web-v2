@@ -1,0 +1,18 @@
+13. Ejercicio guiado
+
+Podés hacer este ejercicio en vivo.
+
+Ejercicio
+
+Tenemos una lista de tareas:
+
+const tareas = ["Estudiar JavaScript", "Hacer ejercicio"];
+
+Realizar:
+
+Agregar "Leer un libro".
+Agregar "Practicar programación".
+Mostrar el array.
+Eliminar la última tarea.
+Eliminar la primera tarea.
+Mostrar cuántas tareas quedan.

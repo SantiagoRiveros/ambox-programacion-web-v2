@@ -1,0 +1,125 @@
+Parte 1 – Funciones y return
+Ejercicio 1 – Minutos a segundos
+
+Crear una función:
+
+convertirASegundos(minutos)
+
+Debe recibir una cantidad de minutos y retornar la cantidad de segundos.
+
+----------------------------
+
+Ejercicio 3 – Número par
+
+Crear:
+
+esPar(numero)
+
+Debe retornar true si el número es par y false si es impar.
+
+-----------------------------
+
+Ejercicio 4 – Convertir minutos a horas
+
+Crear:
+
+convertirAHoras(minutos)
+
+Debe retornar las horas correspondientes.
+
+Ejemplo:
+
+convertirAHoras(180);
+
+-----------------------------------------
+
+Parte 2 – Scope
+Ejercicio 5
+
+Crear una variable global:
+
+const impuesto = 0.21;
+
+Crear una función:
+
+calcularImpuesto(precio)
+
+que utilice la variable global para calcular el impuesto.
+
+Después crear dentro de otra función una variable llamada impuesto con un valor diferente.
+
+Responder:
+¿Qué valor utiliza cada función?
+¿Por qué?
+¿Qué diferencia existe entre una variable global y una local?
+
+---------------------------------------------
+
+Ejercicio 6
+
+Analizar este código:
+
+const mensaje = "Mensaje global";
+
+function primeraFuncion() {
+    const mensaje = "Mensaje local";
+
+    function segundaFuncion() {
+        console.log(mensaje);
+    }
+
+    segundaFuncion();
+}
+
+primeraFuncion();
+
+console.log(mensaje);
+
+Sin ejecutar el código, indicar qué se imprime y explicar por qué.
+
+-----------------------------
+
+Parte 3 – Funciones anidadas
+Ejercicio 7 – Conversor de tiempo
+
+Crear:
+
+convertirTiempo(horas, minutos)
+
+Dentro de esta función crear dos funciones:
+
+convertirHoras()
+convertirMinutos()
+
+Cada una debe realizar una conversión.
+
+La función principal debe utilizar ambas y retornar la cantidad total de minutos.
+
+-------------------------------
+
+Parte 4 – Funciones llamadoras
+Ejercicio 9 – Conversor
+
+Crear tres funciones:
+
+aKilometros(millas)
+aMillas(kilometros)
+aMetros(kilometros)
+
+Todas deben retornar el resultado de la conversión.
+
+Después crear:
+
+convertir(valor, funcionConversion)
+
+La función convertir() debe recibir:
+
+un valor
+una función
+
+y debe encargarse de llamar a la función recibida.
+
+Ejemplo:
+
+convertir(10, aKilometros);
+convertir(10, aMillas);

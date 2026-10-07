@@ -1,0 +1,101 @@
+¿Que es una funcion?
+Una funcion es un bloque de codigo reutilizable que realiza una tarea especifica
+
+sintaxis basica:
+function saludar(){
+    console.log("Hola")
+}
+
+saludar()
+
+Cuenta con 2 etapas muy bien marcadas, y totalmente diferentes:
+
+1- DECLARACION:
+Cuando declaramos en si la funcion, y le damos su bloque de codigo. EjemplO:
+function saludar(){
+    console.log("Hola")
+}
+
+En esta instancia, le asignamos el nombre (saludar) y le ponemos su bloque de codigo
+(lo que esta entre llaves, en este caso el console.log())
+La declaracion, se hace una sola vez. Definir una funcion NO es ejecutarla.
+
+2- EJECUCION:
+Cuando llamamos a la funcion por su nombre, para que se ejecute, podemos hacerlo
+tantas veces como nosotros queramos (Y esta es la magia y gracia de las funciones)
+Ejemplo:
+saludar()
+
+Importante -> Si la funcion no esta declarada, no se ejecutara nada, y dara error.
+
+----------------------------------------------
+
+Formas de declarar una funcion:
+
+1- con la sintaxis clasica:
+
+function saludar(){
+    console.log("Hola")
+}
+
+2- Con Arrow Function:
+
+const saludar = () => console.log("Hola")
+
+Las arrow function, permiten que si es de una sola linea, no usemos las llaves, ni el "return"
+
+IMPORTANTE -> Si la funcion tiene mas de una linea en su bloque de codigo, el bloque de codigo.
+Debe estar envuelto en llaves. Ejemplo:
+
+const saludar = () => {
+    console.log("Hola")
+    console.log("¿Como estas?")
+}
+
+-------------------------
+
+Funciones con parametros:
+Los parametros permiten que una funcion reciba informacion.
+
+function saludar(nombre){
+    console.log("Hola " + nombre)
+}
+
+saludar("Santiago")
+saludar("Juan")
+
+-------------------------------------
+
+return -> ES IMPORTANTE saber que el return, detiene la ejecucion de una funcion
+
+-------------------------------------
+
+default props / parametros por defecto
+
+cuando en una funcion, puede estar la posibilidad que no recibimos ningun parametro.
+podemos asignarselo de manera default
+
+ejemplo:
+
+const sumar = (numero1 = 0, numero2 = 0) => numero1 + numero2
+
+----------------
+
+SCOPE:
+El scope determina donde una variable puede ser utilizado
+Una variable no necesariamente esta disponible en todo el programa.
+
+-SCOPE GLOBAL:
+Una variable declarada fuera de una funcion pertenece al scope GLOBAL:
+
+const nombre = "Santaigo"
+
+function saludar(){
+    console.log(nombre)
+}
+
+saludar()
+
+-SCOPE LOCAL:
+Una variable declarada dentro de una funcion solamente esta disponible dentro de esa funcion.
+

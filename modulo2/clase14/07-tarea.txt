@@ -1,0 +1,22 @@
+Tarea – Gestión de una playlist
+
+Una aplicación de música necesita administrar una playlist.
+
+Comenzar con:
+
+const playlist = ["Canción A", "Canción B", "Canción C"];
+Consignas
+
+Crear un programa que permita simular los siguientes cambios:
+
+Agregar dos canciones nuevas a la playlist.
+Mostrar la playlist después de agregar las canciones.
+Simular que se reproduce la primera canción de la playlist.
+Guardar la canción eliminada en una variable.
+Mostrar un mensaje indicando qué canción comenzó a reproducirse.
+Simular que el usuario elimina la última canción de la playlist.
+Guardar la canción eliminada en una variable.
+Mostrar cuál fue eliminada.
+Agregar una nueva canción a la playlist.
+Mostrar la playlist final.
+Mostrar cuántas canciones quedan utilizando length.

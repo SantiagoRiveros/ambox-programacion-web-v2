@@ -1,0 +1,22 @@
+Ejercicio – Carrito de compras
+
+Una tienda online tiene un carrito con algunos productos:
+
+const carrito = ["Mouse", "Teclado", "Monitor"];
+
+El programa debe simular cambios en el carrito.
+
+Consignas
+Agregar "Auriculares" al carrito.
+Agregar "Webcam" al carrito.
+Mostrar el carrito completo.
+El cliente decide quitar el último producto agregado. Guardá el producto eliminado en una variable.
+
+Mostrar:
+
+Producto eliminado: Webcam
+El cliente también decide quitar el primer producto del carrito. Guardalo en otra variable.
+Mostrar qué producto fue eliminado.
+Agregar "Parlantes" al carrito.
+Mostrar el carrito final.
+Mostrar cuántos productos tiene el carrito.

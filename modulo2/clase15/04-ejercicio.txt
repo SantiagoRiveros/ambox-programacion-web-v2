@@ -1,0 +1,53 @@
+Consigna
+Una aplicación necesita administrar una lista de números ingresados por un usuario. 
+Deberán crear un programa que permita agregar y eliminar números, 
+buscar valores, filtrar resultados, transformarlos y realizar cálculos.
+
+codigo inicial:
+
+let numeros = [12, 5, 8, 20, 3, 15, 10, 7];
+let frutas = ["manzana", "pera", "banana", "naranja"];
+
+Parte 1. Modificar el array
+1. Agregar el número 25 al final del array.
+2. Agregar el número 2 al principio.
+3. Eliminar el último número y guardarlo en una variable.
+4. Eliminar el primer número y guardarlo en otra variable.
+5. Mostrar el array después de cada operación.
+
+Métodos: push(), pop(), unshift(), shift().
+
+Parte 2. Buscar y comprobar
+6. Comprobar si el número 20 está en el array.
+7. Mostrar la posición del número 15.
+8. Encontrar la posición del primer número mayor que 10.
+9. Comprobar si hay algún número negativo.
+10. Comprobar si todos los números son mayores que 0.
+11. Buscar el primer número mayor que 10 y guardarlo en una variable.
+
+Métodos: includes(), indexOf(), findIndex(), some(), every(), find().
+
+Parte 3. Transformar y filtrar
+12. Crear un nuevo array con todos los números multiplicados por 2.
+13. Crear un nuevo array que contenga únicamente los números mayores que 10.
+14. Crear un nuevo array con los números pares.
+15. Crear un nuevo array con todos los números convertidos en texto, con el formato "Número: 12".
+
+Métodos: map(), filter().
+
+Parte 4. Realizar cálculos
+16. Calcular la suma de todos los números.
+17. Calcular el promedio.
+18. Calcular el producto de todos los números.
+
+Método: reduce().
+
+Parte 5. Ordenar y combinar
+19. Crear una copia del array y ordenarla de menor a mayor, sin modificar el array original.
+20. Crear una copia del array e invertir su orden.
+21. Obtener una porción del array que contenga los elementos desde el índice 1 hasta el índice 3, sin incluir el índice 3.
+22. Eliminar el elemento ubicado en el índice 2 usando splice().
+23. Crear un nuevo array que contenga los números originales y los números [100, 200, 300].
+24. Convertir el array de frutas en un único string, separando cada fruta con " - ".
+
+Métodos: slice(), splice(), sort(), reverse(), concat(), join().

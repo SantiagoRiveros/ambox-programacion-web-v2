@@ -1,0 +1,67 @@
+Que es un objeto?
+
+Hasta ahora, trabajamos con variables y arrays. Un array nos permite 
+guardar varios valores ordenados.
+Pero... ¿Que pasa cuando queremos representar algo que tiene diferentes caracteristicas?
+
+Por ejemplo, un alumno tiene nombre, edad, curso y nota.
+
+Podemos crear variables separadas:
+
+let nombre = "lucia";
+let edad = 22;
+let curso = "Javascript";
+let nota = 9;
+
+Pero, estas variables estan separadas, si queremos representar a ese alumno 
+como una unica entidad, podemos usar un objeto.
+
+Un objeto nos permite agrupar informacion relacionada
+mediante pares de clave-valor.
+
+clave               propiedad
+nombre              "lucia"
+edad                22
+curso               "Javascript"
+nota                9
+
+Las claves identifican cada dato y los valores contienen
+la informacion.
+
+Un objeto se escribe con llaves {}.
+Cada propiedad tiene una clave, dos puntos y un valor 
+Las propiedades se separan con coma.
+
+Los valores pueden ser strings, numeros, booleanos
+arrays, funciones y tambien otros objetos.
+
+Para acceder a un valor de una variable, debemos
+usar la dot notation, es decir, puntos.
+
+Se accede a un valor, poniendo la variable, punto, la clave.
+
+¿Como le cambio el valor a una clave?
+
+variable punto clave = nuevo valor
+
+¿Como le agrego una clave-valor?
+
+variable punto nueva clave = nuevo valor
+
+-----------------------
+
+tambien podemos acceder a los valores ocn corchetes.
+
+tambien, si nosotros tenemos guardado en algun lugar el nombre
+de la clave, podemos acceder a ella, mediante
+corchetes, sin las comillas
+
+¿Como eliminamos una clave?
+
+delete variable.clave
+
+-----------------------
+
+this:
+this hace refderencia al objeto desde el que se
+invoca el metodo, permite acceder a sus propiedades

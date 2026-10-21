@@ -1,0 +1,26 @@
+JSON significa Javascript Object notation
+es un formato de texto utilizado para representar e intercambiar datos.
+Se usa mucho cuando una aplicacion necesita enviar informacion a un servidor o recibirla.
+o guardar datos en un archivo
+
+Ejemplo de JSON:
+{
+    "nombre": "Notebook",
+    "precio": 850000,
+    "disponible": true,
+    "categorias": ["Tecnología", "Computación"]
+}
+
+Diferencias con objetos:
+-En JSON, las claves debene star entre comillas DOBLES.
+-Los valores de texto tambien usan comillas dobles
+-JSON no permite funciones, undefined ni comentarios
+-JSON es un formato de texto que se puede intercambiar entre diferentes lenguajes de programacion.
+
+Como convierto algo a JSON:
+
+Javascript -> JSON
+JSON.stringify()
+
+JSON -> Javascript
+JSON.parse()

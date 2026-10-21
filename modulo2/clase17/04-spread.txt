@@ -1,0 +1,9 @@
+¿Que es spread?
+Spread es un operador que permite expandir los elementos de un array o las propiedades 
+de un objeto. Es especialmente util para copiar y combinar estructuras de datos.
+
+Su sintaxis utiliza tres puntos:
+...
+
+el significado exacto depende de donde lo utilicemos. Hoy vamos a concentrarnos en arrays y objetos.
+

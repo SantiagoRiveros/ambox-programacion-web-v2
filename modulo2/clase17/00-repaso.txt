@@ -1,0 +1,25 @@
+const alumno = {
+    nombre: "Lucía",
+    edad: 22,
+    curso: "JavaScript",
+    aprobado: true
+};
+
+console.log(alumno.nombre);
+console.log(alumno.edad);
+
+Un objeto permite agrupar informacion relacionada en una sola estructura. Cada dato se guarda
+en una propiedad que tiene un nombre y un valor.
+
+En este caso: nombre, edad, curso y aprobado son propiedades del objeto alumno.
+
+Hasta ahora para acceder a una propiedad usamos la notacion con punto o dot notation:
+
+console.log(alumno.nombre)
+
+Hoy vamos a aprender otras formas de trabajar con esos datos:
+
+-Extraer propiedades facilmente mediante destructuring.
+-Copiar y combinar objetos con spread
+-Convertir objetos en texto y recuperar objetos a partir de JSON.
+

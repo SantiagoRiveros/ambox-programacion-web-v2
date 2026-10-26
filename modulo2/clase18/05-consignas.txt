@@ -1,0 +1,104 @@
+# Trabajo Práctico – Lista de tareas (Todo List)
+
+**Curso:** Programación Web  
+**Tema:** DOM y eventos en JavaScript  
+**Tecnologías:** HTML y JavaScript
+
+## Objetivo
+
+Desarrollar una aplicación web que permita administrar una lista de tareas. El usuario deberá poder agregar tareas, marcarlas como completadas y eliminarlas utilizando botones y eventos de JavaScript.
+
+La página debe actualizarse dinámicamente, sin necesidad de recargar el navegador.
+
+## Consignas
+
+### 1. Estructura HTML
+
+Crear un archivo `index.html` que contenga:
+
+- Un título principal: "Mi lista de tareas".
+- Un campo de texto para escribir una nueva tarea.
+- Un botón para agregar la tarea.
+- Una lista vacía donde se mostrarán las tareas.
+- Un archivo `script.js` vinculado correctamente al HTML.
+
+### 2. Seleccionar los elementos
+
+En `script.js`, utilizar `document.querySelector()` para seleccionar:
+
+- El campo de texto.
+- El botón para agregar tareas.
+- La lista donde se mostrarán las tareas.
+
+Guardar cada elemento en una constante.
+
+### 3. Agregar tareas
+
+Utilizar `addEventListener()` para detectar el evento `click` del botón de agregar.
+
+Cuando el usuario presione el botón:
+
+1. Obtener el texto ingresado en el campo.
+2. Verificar que no esté vacío.
+3. Crear un nuevo elemento `li` utilizando `document.createElement()`.
+4. Asignar el texto de la tarea al elemento creado.
+5. Agregar el elemento a la lista utilizando `appendChild()`.
+6. Limpiar el campo de texto para poder ingresar otra tarea.
+
+Si el campo está vacío, mostrar un mensaje indicando que se debe escribir una tarea.
+
+### 4. Marcar tareas como completadas
+
+Cada tarea debe contar con un botón que permita marcarla como completada.
+
+Al presionar ese botón:
+
+- La tarea debe cambiar visualmente para indicar que está completada.
+- Se puede utilizar la propiedad `style` para cambiar el color o aplicar un tachado al texto.
+
+Por ejemplo, una tarea completada podría mostrarse con el texto tachado.
+
+### 5. Eliminar tareas
+
+Cada tarea debe tener un botón para eliminarla.
+
+Al presionar ese botón, la tarea correspondiente debe desaparecer de la lista.
+
+Investigar qué método de JavaScript permite eliminar un elemento del DOM.
+
+### 6. Mostrar la cantidad de tareas
+
+Agregar un párrafo que indique cuántas tareas hay en la lista.
+
+Cada vez que se agregue o elimine una tarea, el número deberá actualizarse automáticamente.
+
+### 7. Mejoras opcionales
+
+Quienes terminen los puntos anteriores pueden implementar alguna de estas mejoras:
+
+- Permitir agregar tareas presionando la tecla Enter.
+- Mostrar un mensaje cuando no haya tareas pendientes.
+- Agregar un botón para eliminar todas las tareas.
+- Diferenciar visualmente las tareas pendientes de las completadas.
+
+## Requisitos técnicos
+
+- Utilizar HTML y JavaScript.
+- Utilizar `document.querySelector()`.
+- Utilizar `addEventListener()` para manejar las interacciones.
+- Utilizar `document.createElement()` para crear las tareas.
+- Utilizar `appendChild()` para agregar elementos al DOM.
+- Utilizar `textContent` o `innerHTML` para mostrar contenido.
+- Utilizar condicionales cuando sea necesario.
+- No utilizar frameworks ni bibliotecas externas.
+
+## Entrega
+
+Entregar los siguientes archivos:
+
+- `index.html`
+- `script.js`
+
+La aplicación debe funcionar al abrir `index.html` en el navegador.
+
+**Importante:** el código debe estar organizado y tener nombres de variables claros. Se evaluará tanto el funcionamiento como el uso correcto de los conceptos vistos en clase.

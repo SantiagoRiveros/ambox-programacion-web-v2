@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="encabezado">Mi sitio web</h1>
+    <p class="texto">Primer párrafo</p>
+    <p class="texto">Segundo párrafo</p>
+    <ul id="lista"></ul>
+    <div id="resultado"></div>
+    <script>
+      const encabezado = document.querySelector("#encabezado");
+      const texto = document.querySelector(".texto");
+      // texto devuelve solo el Primer Parrafo ¿porque?
+      // Porque querySelector devuelve el primer elemento que encuentra
+      // Si queremos capturar todos, usamos querySelectorAll
+      const resultado = document.querySelector("#resultado");
+
+      // cambiamos el texto del primer parrafo
+      texto.textContent = "Hola";
+      // puedo modificar los estilos de un elemento
+      encabezado.style.color = "red";
+
+      // Vamos a agregarle contenido al div vacio
+
+      resultado.innerHTML = `
+        <h2>Mi tarjeta</h2>
+        <p>Esta tarjeta fue creada con javascript</p>
+        <button>Ver mas</button>
+      `;
+
+      const lista = document.querySelector("#lista");
+      const nuevoListItem = document.createElement("li");
+      nuevoListItem.textContent = "Primer Item";
+      // aun el list item o <li> no aparece porque, aun no esta metido en el dom
+      // vamos a hacerlo "hijo" de otro elemento
+      lista.appendChild(nuevoListItem);
+    </script>
+  </body>
+</html>

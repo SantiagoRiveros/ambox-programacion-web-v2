@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="contenedor"></div>
+    <style>
+      .tarjeta {
+        border: 1px solid #999;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 8px;
+      }
+    </style>
+    <script>
+      const contenedor = document.querySelector("#contenedor");
+
+      const tarjeta = document.createElement("div");
+      tarjeta.className = "tarjeta";
+
+      const titulo = document.createElement("h2");
+      titulo.textContent = "Producto 1";
+
+      const precio = document.createElement("p");
+      precio.textContent = "Precio: $15000";
+
+      tarjeta.appendChild(titulo);
+      tarjeta.appendChild(precio);
+
+      contenedor.appendChild(tarjeta);
+    </script>
+  </body>
+</html>

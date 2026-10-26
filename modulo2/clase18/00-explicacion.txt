@@ -1,0 +1,51 @@
+DOM:
+Dom significa Document Object Model (modelo de objetos del documento)
+
+Cuando el navegador carga un archivo html, construye una representacion de sus elementos en forma
+de arbol.
+Javascript puede acceder a esa representacion para consultar, modificar, agregar o eliminar
+elementos dentor de la pagina.
+
+Por ejemplo, tenemos este HTML:
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi página</title>
+</head>
+<body>
+    <h1>Hola, mundo</h1>
+    <p>Esta es mi primera página web.</p>
+</body>
+</html>
+
+El navegador interpreta este documento y crea una estrctura de archivos que Javascript puede manipular:
+
+document -> html -> head (title, meta)
+                 -> body (h1, p...)
+
+document = {
+    html: {
+        head: [title, meta],
+        body: [h1, p]
+    }
+}
+
+La idea es que JS no necesita reescribir todo el html para cambiar la pagina.
+puede seleccionar un elemento especifico y modificarlo.
+
+¿Para que sirve?
+Cambiar un titulo o parrafo
+Mostrar mensajes en pantalla
+Agregar productos tareas o tarjetas
+Actualizar informacion sin recargar la pagina
+Construir interfaces dinamicas
+
+-------------
+
+addEventListener
+permite ejecutar una funcion cuando ocurre un evento en un elemento HTML.
+
+Por ejemplo: Cuando el usuario hace clic en un boton, escribe en un input o meuve el mouse sobre un elemento.
+

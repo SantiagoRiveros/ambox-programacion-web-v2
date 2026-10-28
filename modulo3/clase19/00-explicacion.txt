@@ -1,0 +1,159 @@
+¿Que es React?
+
+React es una biblioteca de Javascript utilizada para construir interfaces de usuario.
+Permite dividir una interfaz en pequeñas piezas llamadas componentes, que podemos reutilizar
+en diferentes partes de la aplicacion.
+
+Es decir, nuestro frontend ahora es granular y modular.
+
+Se utiliza para crear:
+-Aplicaciones Web
+-Paneles administrativos y dashboards
+-Tiendas online
+-Redes Sociales
+-Interfaces de aplicaciones que necesitan actualizar su contenido dinamicamente.
+
+¿Que problema resuelve?
+Imaginemos que tenemos una pagina con diez tarjetas de productos. Cada tarjeta contiene una imagen.
+un nombre un precio y un boton.
+
+Sin componentes podriamos terminar repitiendo mucho codigo HTML
+
+Con React podemos crear una unica pieza reutilizable llamada Producto, y utilizarla 10 veces, cambiando
+los datos que muestra cada instancia.
+
+Conceptos fundamentales:
+-React: biblioteca para construir interfaces.
+-Componente: pieza reutilizable de una interfaz.
+-JSX: SIntaxis que permite escribir estructuras similares a HTML dentro de Javascript.
+-Props: Datos que un componente recibe desde otro componente
+
+React NO reemplaza Javascript, para trabajar con React necesitamos conocer
+Javascript, funciones, objetos, arrays y modulos.
+
+¿Como crteamos nuestro primer proyecto? 
+
+en la terminal:
+
+npm create vite@latest
+
+pregunta por framework -> React
+pregunta variante -> Javascript
+pregunta Linter -> ESLint
+la ultima pregunta ponemos -> Y
+
+Reglas de JSX:
+Regla 1 : Devolver un elemento raiz:
+Esto no funciona:
+
+function App() {
+  return (
+    <h1>Hola</h1>
+    <p>Bienvenidos a React</p>
+  );
+}
+
+El problema es que estamos intentando devolver dos elementos hermanos sin un contenedor.
+Cada componente devuelve UN elemento, luego si queremos deovlver mas cosas, tienene que ser 
+nodos hijos de ese elemento
+
+Una solucion es usar un div:
+function App() {
+  return (
+    <div>
+      <h1>Hola</h1>
+      <p>Bienvenidos a React</p>
+    </div>
+  );
+}
+
+Otra solucion es usar un fragmento:
+function App() {
+  return (
+    <>
+      <h1>Hola</h1>
+      <p>Bienvenidos a React</p>
+    </>
+  );
+}
+
+El fragmento <> agrupa elementos sin agregar un elemento HTML extra al resultado.
+
+Regla 2 : Cerrar las etiquetas:
+En JSX las etiquetas deben estar correctamente cerradas.
+
+// Incorrecto
+<img src="foto.jpg">
+<input>
+
+// Correcto
+<img src="foto.jpg" />
+<input />
+
+Regla 3: Utilizar className (en vez de class)
+En HTML escribimos class, pero en JSX className
+
+function App() {
+  return (
+    <div className="contenedor">
+      <h1>Mi página</h1>
+    </div>
+  );
+}
+
+Regla 4: Insertar expresiones Javascript con llaves:
+Podemos insertar valores y expresiones Javascript utilizando {}
+
+function App() {
+  const nombre = "Santiago";
+  const edad = 33;
+
+  return (
+    <div>
+      <h1>Hola, {nombre}</h1>
+      <p>El año que viene tendrás {edad + 1} años.</p>
+    </div>
+  );
+}
+
+export default App;
+
+Tambien podemos llamar Funciones:
+
+function obtenerSaludo() {
+  return "Bienvenidos al curso";
+}
+
+function App() {
+  return <h1>{obtenerSaludo()}</h1>;
+}
+
+export default App;
+
+Regla 5: Los comentarios dentro del JSX
+Fuera del JSX:
+// Esto es un comentario
+
+dentro del JSX:
+
+function App() {
+  return (
+    <div>
+      {/* Este comentario no se muestra en pantalla */}
+      <h1>Hola</h1>
+    </div>
+  );
+}
+
+Regla 6: Los componentes de React y su nombre.
+Todo componetne en React debe comenzar con mayuscula.
+
+---------------------
+
+Ejercicio rapido:
+
+Crear un proyecto en React y en App.jsx poner esto:
+
+Un título con su nombre.
+Un párrafo con su edad.
+Un párrafo que muestre su edad dentro de cinco años, calculada mediante JavaScript

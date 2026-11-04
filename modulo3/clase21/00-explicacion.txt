@@ -1,0 +1,94 @@
+UseEffect, ciclo de vida y consumo de APIs
+
+Que es useEffect?
+Es un hook de react que permite ejecutar codigo despues de que React actualiza la interfaz.
+
+Su sintaxis es:
+
+import { useEffect } from "react"
+
+useEffect(() => {
+    // Codigo que queremos ejecutar
+},[dependencias])
+
+Tiene dos partes importantes:
+1. Una funcion que contiene el efecto secundario.
+2. Un array de dependencias que determina cuando debe ejecutarse.
+
+Si el array de dependencias queda vacio se ejecutara SOLO al terminar de renderizar el componente
+Si no, se ejecuta cuando termina de renderizar y cuando ocurra un cambio en la dependenci
+
+La dependencia puede ser un prop, un estado, etc.
+
+Para entender CUANDO ejecuta useEffect tenemos que hablar de ciclo de vida del componente:
+
+Ciclo de vida:
+
+1. Mount (montaje)
+El componente aparece por primera vez en pantalla.
+Ejemplo: El usuario entra a una pagina y carga el componente.
+
+2. Update (Actualizacion)
+El componente vuelve a renderizarse porque cambio su estado o alguna prop.
+Ejemplo: El usuario presiona un boton y cambia el contador.
+
+3. Unmount (Desmontaje)
+El componente desaparece de la interfaz
+Ejemplo: El usuario navega hacia otra pagina y el componente deja de mostrarse
+
+---------------
+
+Asincronismo:
+
+Hay veces que las acciones en javascript no son instantaneas
+
+let variableA = Algo que tarda
+
+console.log(variableA) <- tal vez cuando JS llega a este punto, no tiene todavia el resultado de que es variableA
+
+Entonces, cual es la solucion? Esperar la respuesta.
+
+Hay dos formas de esperar, 2 sintaxis, una con .then y otra con async await:
+
+Para entender esto, primero debemos hablar de Promesas (Promises)
+
+Una promesa es un objeto que representa el resultado futuro de una operacion asincrona.
+
+Tiene tres estados posibles:
+
+Pending (Pendiente)
+La operacion aun no termino
+
+Fullfilled (Resuelta)
+La operacion termino bien
+
+Rejected (rechazada)
+La operacion termino con un error.
+
+Sintaxis con .then:
+
+promesa
+    .then((resultadoPromesa) => {
+        // Que hacemos cuando termina correctamente
+    })
+    .catch((error) => {
+        // Que hacemos con el error
+    })
+
+---------------------------
+
+Repaso de metodos HTTP:
+
+GET -> Leer, traer
+
+POST -> Crear
+
+PUT -> Editar
+
+DELETE -> Eliminar
+
+-----------
+
+ternario:
+
+{condicion ? queHacerSiPasaCondicion : QueHacerSiNoPasa}

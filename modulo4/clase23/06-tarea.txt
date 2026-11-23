@@ -1,0 +1,56 @@
+Ejercicio 1 – Animales
+Crear una clase padre Animal.
+
+Propiedades:
+- nombre
+- edad
+Métodos:
+- comer(): mostrar "El animal está comiendo".
+- mostrarInformacion(): mostrar nombre y edad.
+Crear dos clases hijas:
+
+Perro
+- Propiedad adicional: raza.
+- Método propio: ladrar().
+Gato
+- Propiedad adicional: color.
+- Método propio: maullar().
+Crear un perro y un gato y utilizar tanto los métodos heredados como los propios.
+Ejercicio 2 – Vehículos
+Crear una clase padre Vehiculo.
+
+Propiedades:
+- marca
+- modelo
+- velocidad
+Métodos:
+- acelerar(): aumentar la velocidad en 10.
+- frenar(): disminuir la velocidad en 10.
+- mostrarInformacion().
+Crear dos clases hijas:
+
+Auto
+- Propiedad adicional: cantidadPuertas.
+- Método propio: abrirBaul().
+Motocicleta
+- Propiedad adicional: cilindrada.
+- Método propio: hacerWheelie().
+Ejercicio 3 – Usuarios de una plataforma
+Crear una clase padre Usuario.
+
+Propiedades:
+- nombre
+- email
+- password
+Métodos:
+- iniciarSesion().
+- cerrarSesion().
+Crear dos clases hijas:
+
+Administrador
+- Propiedad adicional: nivelAcceso.
+- Método propio: eliminarUsuario().
+Cliente
+- Propiedad adicional: direccion.
+- Método propio: realizarCompra().
+Crear instancias de ambas clases y probar sus funcionalidades.

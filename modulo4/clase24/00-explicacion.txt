@@ -1,0 +1,67 @@
+NodeJS es un entorno de ejecucion que permite ejecutar Javascript fuera del navegador.
+Tradicionalmente, Javascript se utilizaba principalmente en navegadores como Chrome, Firefox
+o Edge.
+
+Con NodeJS podemos utilizar Javascript para:
+-Crear Servidores Web.
+-Crear APIs REST.
+-Conectarnos a Bases de datos
+-Leer y escribir archivos.
+-Automatizar Tareas.
+-Crear Aplicaciones de Backend
+-Ejecutar Scripts de la terminal
+
+Nosotros en este caso lo vamos a orientar al backend 
+
+¿Que responsabilidades tiene el backend?
+Cuando un usuario inicia sesion en una aplicacion, el backend, puede:
+1. Recibir el email y contraseña.
+2. validar que los datos sean correctos.
+3. Consultar la bases de datos.
+4. Verificar las credenciales.
+5. Generar un token de autenticacion.
+6. Devolver una respuesta al frontend
+
+¿Porque usar Node.JS?
+-Permite utilizar Javascript tanto en frontend como backend 
+-Tiene un ecosistema enorme de paquetes
+-Es especialmente util para APIs y aplicaciones con muchas operaciones de entrada/salida
+-Permite trabajar con bases de datos.
+-Tiene herramientas para crear servidores y gestionar solicitudes HTTP
+
+Asincronismo:
+
+Las promesas son funciones que aun no estan resueltas, pero que lo estaran, y que pueden
+o bien resolverse o bien rechazarse.
+
+------------------------
+
+Creando nuestra primer API:
+
+Con NPM init creamos nuestro archivo package.json, el cual va a administrar nuestra API
+
+-----------------------------
+
+El backend tanto como el frontend corren en la web, tambien ambas
+comparten una particularidad: tienen URLs (o direcciones web)
+
+La diferencia, es que el backend, no tiene una parte "visual"
+no tiene interfaz como lo tiene HTML, es mas abstracto
+
+Asi como el frontend tiene "rutas" o direcciones,
+el backend tambien, estas direcciones se conocen como "endpoints"
+un endpoint, es una direccion web, hacia donde dirigis una solicitud HTTP, que puede ser:
+GET - POST - PUT - DELETE
+
+Ejemplo de un get a una API local:
+
+GET - http://localhost:3000/usuarios
+
+http://localhost -> Indica que loe stamos corriendo en local
+:3000 -> Es el puerto en el que se ejecuta
+/usuarios -> es la ruta
+
+La forma de enviar informacion a un endpoint es:
+-Body: Es como un objeto
+-Params: va en la url, como un valor dinamico
+-Query: Se concatena a la URL

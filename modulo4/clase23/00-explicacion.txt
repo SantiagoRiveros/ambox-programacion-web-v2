@@ -1,0 +1,24 @@
+Que es la programacion orientada a objetos o POO?
+Es un paradigma de programacion que organiza el codigo usando objetos
+UN objeto representa una entidad que tiene:
+
+Propiedades: Caracteristicas o datos.
+Metodos: Acciones o comportamientos
+
+Por ejemplo, vamos a pensar en un auto:
+
+Propiedades: Marca, modelo, color, velocidad.
+Metodos: arrancar(), acelerar(), frenar() y girar()
+
+-----------------------------------------------------
+
+¿Que es una clase?
+
+Una clase es como una plantilla o molde que permite crear multiples objetos, 
+con una estructura y comportamiento similares.
+
+---------------------------
+
+Herencia:
+Supongamos que tenemos una clase empleado,
+pero hay diferentes tipos de empleado, administrativo, etc.

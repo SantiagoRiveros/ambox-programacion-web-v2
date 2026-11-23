@@ -1,0 +1,35 @@
+Ejercicio 1 – Producto
+Crear una clase Producto que tenga:
+
+Propiedades:
+- nombre
+- precio
+- categoria
+Métodos:
+- mostrarInformacion(): muestra todos los datos del producto.
+- aplicarDescuento(porcentaje): aplica un descuento al precio.
+Crear tres productos diferentes y probar sus métodos.
+
+Ejercicio 2 – Cuenta bancaria
+Crear una clase CuentaBancaria que tenga:
+
+Propiedades:
+- titular
+- numeroCuenta
+- saldo (inicia en 0).
+Métodos:
+- depositar(cantidad): suma dinero al saldo.
+- consultarSaldo(): muestra el saldo actual.
+Crear dos cuentas diferentes y realizar varios depósitos.
+
+Ejercicio 3 – Película
+Crear una clase Pelicula que tenga:
+
+Propiedades:
+- titulo
+- director
+- anio
+- duracion
+Métodos:
+- mostrarInformacion(): muestra todos los datos.
+- esClasica(): devuelve true si la película se estrenó antes del año 2000 y false en caso contrario.
